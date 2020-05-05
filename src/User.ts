@@ -14,4 +14,8 @@ export class User {
       lng: parseFloat(faker.address.longitude()),
     };
   }
+
+  infoWindowContent(): string {
+    return `Hello from ${this.name}`;
+  }
 }

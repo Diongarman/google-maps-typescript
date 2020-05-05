@@ -16,4 +16,8 @@ export class Company {
       lng: parseFloat(faker.address.longitude()),
     };
   }
+
+  infoWindowContent(): string {
+    return `Hello from ${this.companyName}`;
+  }
 }
