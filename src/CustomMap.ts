@@ -1,11 +1,12 @@
 //instuctions to every other class on how to
 //be an argument to addMarker, or any other method that
 //requires the Mappable interface to be implemented
-interface Mappable {
+export interface Mappable {
   location: {
     lat: number;
     lng: number;
   };
+  colour: string;
 
   infoWindowContent(): string;
 }
